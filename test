@@ -1,0 +1,10 @@
+#! /bin/bash
+
+oldIFS=$IFS IFS=":"
+
+for directory in $PATH
+do
+    echo $directory
+done
+
+IFS=$oldIFS
